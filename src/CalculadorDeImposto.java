@@ -1,14 +1,9 @@
 
 public class CalculadorDeImposto {
-	public void realizaOrcamento(Orcamento orcamento) {
-			double iss = new ISS().calculaISS(orcamento);
-			System.out.println(iss);		
+	public void realizaCalculo(Orcamento orcamento, Imposto imposto ) {
+			double calculo = imposto.calcula(orcamento);
+			System.out.println(calculo);		
 	}
 	
-	public void realizaOrcamentoISS(Orcamento orcamento) {
-		
-			double iss = new ISS().calculaISS(orcamento);
-			System.out.println(iss);
-		
-	}
+	
 }

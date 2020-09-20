@@ -1,9 +1,7 @@
 package chaimOfResponsibility;
 
 public class DescontoPorMaisDeQuinhentosReais implements Desconto {
-
-	private Desconto proximo;
-	
+	private Desconto proximo;	
 	
 	public  DescontoPorMaisDeQuinhentosReais(Desconto proximo) {
 		this.proximo = proximo;		
@@ -14,7 +12,5 @@ public class DescontoPorMaisDeQuinhentosReais implements Desconto {
 			return orcamento.getValor() * 0.07;
 
 		return proximo.desconta(orcamento);
-	}
-
-	
+	}	
 }

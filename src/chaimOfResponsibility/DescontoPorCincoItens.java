@@ -14,5 +14,4 @@ public class DescontoPorCincoItens implements Desconto  {
 		
 		return proximo.desconta(orcamento);
 	}
-
 }
